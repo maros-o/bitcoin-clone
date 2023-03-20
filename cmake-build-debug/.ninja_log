@@ -1,0 +1,16 @@
+# ninja log v5
+707	866	1679323994834644576	miner	ede34c884faee246
+579	689	1679326447220529446	wallet	d4a3477879ffbad5
+0	605	1679323994574640402	CMakeFiles/miner.dir/src/Block.cpp.o	52a0e53160d02155
+1	366	1679325901802559389	CMakeFiles/wallet.dir/src/hashlib.cpp.o	bc8af9b5d833ceb6
+592	764	1679323977554374612	main	6a249ae4e91df73f
+0	504	1679323994470638732	CMakeFiles/miner.dir/src/hashlib.cpp.o	c88d9dd5b45e806c
+0	707	1679323994674642007	CMakeFiles/miner.dir/src/miner.cpp.o	595cfd88a8018fa2
+1	579	1679326447112527411	CMakeFiles/wallet.dir/src/wallet.cpp.o	2ca8483bc3645cb0
+1	368	1679327447717806337	CMakeFiles/wallet.dir/src/hashlib.cpp.o	319e3b95f328f518
+1	593	1679327447941809364	CMakeFiles/wallet.dir/src/wallet.cpp.o	bba159180fa4c4ae
+593	703	1679327448049810824	wallet	d4a3477879ffbad5
+1	376	1679327461369991123	CMakeFiles/miner.dir/src/hashlib.cpp.o	ef69f08ad8d293fe
+1	403	1679327461397991503	CMakeFiles/miner.dir/src/Block.cpp.o	ee64ac0c592187a9
+0	469	1679327461461992370	CMakeFiles/miner.dir/src/miner.cpp.o	ed5e99066a51506c
+469	575	1679327461565993780	miner	ede34c884faee246
