@@ -14,6 +14,15 @@
 # EXTERNAL cache entries
 ########################
 
+//Path to a library.
+B:FILEPATH=B-NOTFOUND
+
+//Path to a library.
+BASE58_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libbase58.so
+
+//Path to a library.
+BASE_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libbase58.so
+
 //Value Computed by CMake
 BITCOIN_BINARY_DIR:STATIC=/home/maros/code/cpp/btc_project/cmake-build-debug
 
@@ -22,6 +31,15 @@ BITCOIN_IS_TOP_LEVEL:STATIC=ON
 
 //Value Computed by CMake
 BITCOIN_SOURCE_DIR:STATIC=/home/maros/code/cpp/btc_project
+
+//Value Computed by CMake
+Bitcoin_BINARY_DIR:STATIC=/home/maros/code/cpp/btc_project/cmake-build-debug
+
+//Value Computed by CMake
+Bitcoin_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Bitcoin_SOURCE_DIR:STATIC=/home/maros/code/cpp/btc_project
 
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
@@ -157,7 +175,7 @@ CMAKE_PROJECT_DESCRIPTION:STATIC=
 CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 
 //Value Computed by CMake
-CMAKE_PROJECT_NAME:STATIC=BITCOIN
+CMAKE_PROJECT_NAME:STATIC=Bitcoin
 
 //Path to a program.
 CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
@@ -222,6 +240,18 @@ CMAKE_STRIP:FILEPATH=/usr/bin/strip
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
 //Path to a library.
+CRYPTOPP_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcryptopp.so
+
+//Path to a library.
+LIBBITCOIN_LIBRARY:FILEPATH=LIBBITCOIN_LIBRARY-NOTFOUND
+
+//Path to a library.
+LIBBTC:FILEPATH=LIBBTC-NOTFOUND
+
+//Path to a library.
+LIBBTC_LIBRARY:FILEPATH=LIBBTC_LIBRARY-NOTFOUND
+
+//Path to a library.
 OPENSSL_CRYPTO_LIBRARY:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so
 
 //Path to a file.
@@ -235,6 +265,27 @@ PKG_CONFIG_ARGN:STRING=
 
 //pkg-config executable
 PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Value Computed by CMake
+Project_BINARY_DIR:STATIC=/home/maros/code/cpp/btc_project/cmake-build-debug
+
+//Value Computed by CMake
+Project_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+Project_SOURCE_DIR:STATIC=/home/maros/code/cpp/btc_project
+
+//Path to a library.
+SECP256K1_LIBRARY:FILEPATH=/usr/local/lib/libsecp256k1.so
+
+//Value Computed by CMake
+btc_BINARY_DIR:STATIC=/home/maros/code/cpp/btc_project/cmake-build-debug
+
+//Value Computed by CMake
+btc_IS_TOP_LEVEL:STATIC=ON
+
+//Value Computed by CMake
+btc_SOURCE_DIR:STATIC=/home/maros/code/cpp/btc_project
 
 //Path to a library.
 pkgcfg_lib__OPENSSL_crypto:FILEPATH=/usr/lib/x86_64-linux-gnu/libcrypto.so

@@ -1,16 +1,21 @@
 cmake_minimum_required(VERSION 3.8)
-project(BITCOIN)
-
-find_package(OpenSSL REQUIRED)
+project(Bitcoin)
 
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g")
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fsanitize=address")
 
-add_compile_options(-Wall -Wextra -pedantic)
+add_compile_options(-Wall -Wextra -pedantic -lsecp256k1)
 
-add_executable(miner src/miner.cpp src/hashlib.cpp include/hashlib.h include/Block.h src/Block.cpp)
-add_executable(wallet src/wallet.cpp src/hashlib.cpp include/hashlib.h)
+find_package(OpenSSL REQUIRED)
 
-target_link_libraries(miner OpenSSL::SSL OpenSSL::Crypto)
-target_link_libraries(wallet OpenSSL::SSL OpenSSL::Crypto)
+find_library(SECP256K1_LIBRARY secp256k1)
+if(NOT SECP256K1_LIBRARY)
+    message(FATAL_ERROR "secp256k1 library not found")
+endif()
+
+add_executable(main src/main.cpp src/HashLib.cpp src/Wallet.cpp src/Block.cpp include/BtcLib.h src/BtcLib.cpp)
+add_executable(miner src/miner.cpp src/HashLib.cpp src/Wallet.cpp src/Block.cpp include/BtcLib.h src/BtcLib.cpp)
+
+target_link_libraries(main OpenSSL::SSL ${SECP256K1_LIBRARY})
+target_link_libraries(miner OpenSSL::SSL ${SECP256K1_LIBRARY})

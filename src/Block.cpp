@@ -1,5 +1,5 @@
 #include "../include/Block.h"
-#include "../include/hashlib.h"
+#include "../include/HashLib.h"
 
 
 Block::Block(uint64_t index, const std::string &data, const std::string& prevHash) : index(index), data(data), nonce(0), prevHash(prevHash), hash(DEFAULT_HASH_VALUE) {}
@@ -44,7 +44,7 @@ void Block::mine() {
 
     while(true) {
         const std::string hash_data = hash_data_base + std::to_string(this->nonce);
-        this->hash = hashlib::sha256(hash_data);
+        //this->hash = hashlib::sha256(hash_data);
 
         if (checkHash(this->hash)) {
             std::cout << "Block #" << this->index << " mined." << std::endl;
