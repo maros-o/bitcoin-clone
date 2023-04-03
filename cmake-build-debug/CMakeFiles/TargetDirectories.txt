@@ -1,4 +1,3 @@
 /home/maros/code/cpp/btc_project/cmake-build-debug/CMakeFiles/main.dir
-/home/maros/code/cpp/btc_project/cmake-build-debug/CMakeFiles/miner.dir
 /home/maros/code/cpp/btc_project/cmake-build-debug/CMakeFiles/edit_cache.dir
 /home/maros/code/cpp/btc_project/cmake-build-debug/CMakeFiles/rebuild_cache.dir

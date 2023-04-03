@@ -4,24 +4,28 @@
 #include <string>
 #include <cstdint>
 
-const uint8_t DIFFICULTY = 5;
-const std::string DEFAULT_HASH_VALUE = "37a8eec1ce19687d132fe29051dca629d164e2c4958ba141d5f4133a33f0688f";
+#include "BtcLib.h"
+#include "Transaction.h"
 
 class Block {
 public:
-    Block(uint64_t index, const std::string& data, const std::string& prevHash);
-    void setData(const std::string& data);
-    const std::string& getHash() const;
-    uint64_t getIndex() const;
+    Block(uint64_t index, btc::bytes  prevHash);
+    [[nodiscard]] const btc::bytes& get_hash() const;
+    [[nodiscard]] uint64_t get_index() const;
+    bool add_transaction(const Transaction& transaction);
 
-    void print();
-    void mine();
-    static bool checkHash(const std::string& hash);
+    bool try_solve(uint64_t try_nonce, const btc::bytes& miner_address);
+    [[nodiscard]] btc::bytes get_hash_data() const;
+    void print() const;
+
+    static bool is_hash_valid(const btc::bytes& hash);
 
 private:
     uint64_t index;
     uint64_t nonce;
-    std::string data;
-    std::string prevHash;
-    std::string hash;
+
+    std::vector<Transaction> transactions;
+
+    btc::bytes prev_hash;
+    btc::bytes hash;
 };

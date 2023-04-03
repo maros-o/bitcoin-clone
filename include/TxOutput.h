@@ -1,14 +1,12 @@
 #pragma once
 
-#include <string>
 #include <cstdint>
 
 #include "BtcLib.h"
-#include "Transaction.h"
 
+// TODO: implement
 
-class TxOutput {
-private:
+struct TxOutput {
     // index of the output being spent
     uint32_t index;
 
@@ -18,4 +16,6 @@ private:
     std::string address;
 
     btc::bytes scriptPubKey;
+
+    void print() const;
 };

@@ -14,8 +14,6 @@ if(NOT SECP256K1_LIBRARY)
     message(FATAL_ERROR "secp256k1 library not found")
 endif()
 
-add_executable(main src/main.cpp src/HashLib.cpp src/Wallet.cpp src/Block.cpp include/BtcLib.h src/BtcLib.cpp)
-add_executable(miner src/miner.cpp src/HashLib.cpp src/Wallet.cpp src/Block.cpp include/BtcLib.h src/BtcLib.cpp)
+add_executable(main src/main.cpp src/HashLib.cpp src/Wallet.cpp src/Block.cpp src/BtcLib.cpp src/Transaction.cpp src/TxInput.cpp src/TxOutput.cpp src/Chain.cpp)
 
 target_link_libraries(main OpenSSL::SSL ${SECP256K1_LIBRARY})
-target_link_libraries(miner OpenSSL::SSL ${SECP256K1_LIBRARY})

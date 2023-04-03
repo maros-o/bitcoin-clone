@@ -15,7 +15,7 @@ public:
     static btc::bytes generate_public_key(const btc::bytes& private_key);
     static btc::bytes generate_address(const btc::bytes& public_key);
 
-    void print();
+    void print() const;
 
 private:
     std::string name;

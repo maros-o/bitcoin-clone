@@ -5,7 +5,6 @@
     <mapping directory="$PROJECT_DIR$/libs/build-libbitcoin-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/libs/build-libbitcoin-system/libbitcoin-system" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/libs/build-libbitcoin-system/secp256k1" vcs="Git" />
-    <mapping directory="$PROJECT_DIR$/libs/libbitcoin" vcs="Git" />
     <mapping directory="$PROJECT_DIR$/libs/secp256k1" vcs="Git" />
   </component>
 </project>

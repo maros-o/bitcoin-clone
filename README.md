@@ -26,3 +26,18 @@ Wallet myWallet("My Wallet");
 myWallet.print();
 ```
 
+### Chain
+The Chain class is responsible for managing the blockchain. It provides methods to add new transactions to the blockchain, mine new blocks, and retrieve information about the blockchain.
+
+To use the Chain class, you first need to create an instance of it using the get_instance() method. This method ensures that there is only one instance of the Chain class throughout the application.
+
+```bash
+Chain& chain = Chain::get_instance();
+```
+
+#### Mining
+To mine a new block, call the mine() method with the miner's Bitcoin address as the parameter. This method adds a new block to the blockchain with the pending transactions and rewards the miner with the mining reward.
+
+```bash
+chain.mine(miner_address);
+```

@@ -79,6 +79,30 @@ build CMakeFiles/main.dir/src/BtcLib.cpp.o: CXX_COMPILER__main_Debug /home/maros
   OBJECT_DIR = CMakeFiles/main.dir
   OBJECT_FILE_DIR = CMakeFiles/main.dir/src
 
+build CMakeFiles/main.dir/src/Transaction.cpp.o: CXX_COMPILER__main_Debug /home/maros/code/cpp/btc_project/src/Transaction.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/Transaction.cpp.o.d
+  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
+
+build CMakeFiles/main.dir/src/TxInput.cpp.o: CXX_COMPILER__main_Debug /home/maros/code/cpp/btc_project/src/TxInput.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/TxInput.cpp.o.d
+  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
+
+build CMakeFiles/main.dir/src/TxOutput.cpp.o: CXX_COMPILER__main_Debug /home/maros/code/cpp/btc_project/src/TxOutput.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/TxOutput.cpp.o.d
+  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
+
+build CMakeFiles/main.dir/src/Chain.cpp.o: CXX_COMPILER__main_Debug /home/maros/code/cpp/btc_project/src/Chain.cpp || cmake_object_order_depends_target_main
+  DEP_FILE = CMakeFiles/main.dir/src/Chain.cpp.o.d
+  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
+  OBJECT_DIR = CMakeFiles/main.dir
+  OBJECT_FILE_DIR = CMakeFiles/main.dir/src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target main
@@ -87,7 +111,7 @@ build CMakeFiles/main.dir/src/BtcLib.cpp.o: CXX_COMPILER__main_Debug /home/maros
 #############################################
 # Link the executable main
 
-build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/HashLib.cpp.o CMakeFiles/main.dir/src/Wallet.cpp.o CMakeFiles/main.dir/src/Block.cpp.o CMakeFiles/main.dir/src/BtcLib.cpp.o | /usr/lib/x86_64-linux-gnu/libssl.so /usr/local/lib/libsecp256k1.so /usr/lib/x86_64-linux-gnu/libcrypto.so
+build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.o CMakeFiles/main.dir/src/HashLib.cpp.o CMakeFiles/main.dir/src/Wallet.cpp.o CMakeFiles/main.dir/src/Block.cpp.o CMakeFiles/main.dir/src/BtcLib.cpp.o CMakeFiles/main.dir/src/Transaction.cpp.o CMakeFiles/main.dir/src/TxInput.cpp.o CMakeFiles/main.dir/src/TxOutput.cpp.o CMakeFiles/main.dir/src/Chain.cpp.o | /usr/lib/x86_64-linux-gnu/libssl.so /usr/local/lib/libsecp256k1.so /usr/lib/x86_64-linux-gnu/libcrypto.so
   FLAGS = -g -fsanitize=address -g
   LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/local/lib/libsecp256k1.so  /usr/lib/x86_64-linux-gnu/libcrypto.so
   OBJECT_DIR = CMakeFiles/main.dir
@@ -95,62 +119,6 @@ build main: CXX_EXECUTABLE_LINKER__main_Debug CMakeFiles/main.dir/src/main.cpp.o
   PRE_LINK = :
   TARGET_FILE = main
   TARGET_PDB = main.dbg
-
-# =============================================================================
-# Object build statements for EXECUTABLE target miner
-
-
-#############################################
-# Order-only phony target for miner
-
-build cmake_object_order_depends_target_miner: phony || CMakeFiles/miner.dir
-
-build CMakeFiles/miner.dir/src/miner.cpp.o: CXX_COMPILER__miner_Debug /home/maros/code/cpp/btc_project/src/miner.cpp || cmake_object_order_depends_target_miner
-  DEP_FILE = CMakeFiles/miner.dir/src/miner.cpp.o.d
-  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/miner.dir
-  OBJECT_FILE_DIR = CMakeFiles/miner.dir/src
-
-build CMakeFiles/miner.dir/src/HashLib.cpp.o: CXX_COMPILER__miner_Debug /home/maros/code/cpp/btc_project/src/HashLib.cpp || cmake_object_order_depends_target_miner
-  DEP_FILE = CMakeFiles/miner.dir/src/HashLib.cpp.o.d
-  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/miner.dir
-  OBJECT_FILE_DIR = CMakeFiles/miner.dir/src
-
-build CMakeFiles/miner.dir/src/Wallet.cpp.o: CXX_COMPILER__miner_Debug /home/maros/code/cpp/btc_project/src/Wallet.cpp || cmake_object_order_depends_target_miner
-  DEP_FILE = CMakeFiles/miner.dir/src/Wallet.cpp.o.d
-  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/miner.dir
-  OBJECT_FILE_DIR = CMakeFiles/miner.dir/src
-
-build CMakeFiles/miner.dir/src/Block.cpp.o: CXX_COMPILER__miner_Debug /home/maros/code/cpp/btc_project/src/Block.cpp || cmake_object_order_depends_target_miner
-  DEP_FILE = CMakeFiles/miner.dir/src/Block.cpp.o.d
-  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/miner.dir
-  OBJECT_FILE_DIR = CMakeFiles/miner.dir/src
-
-build CMakeFiles/miner.dir/src/BtcLib.cpp.o: CXX_COMPILER__miner_Debug /home/maros/code/cpp/btc_project/src/BtcLib.cpp || cmake_object_order_depends_target_miner
-  DEP_FILE = CMakeFiles/miner.dir/src/BtcLib.cpp.o.d
-  FLAGS = -g -fsanitize=address -g -fdiagnostics-color=always -Wall -Wextra -pedantic -lsecp256k1 -std=gnu++17
-  OBJECT_DIR = CMakeFiles/miner.dir
-  OBJECT_FILE_DIR = CMakeFiles/miner.dir/src
-
-
-# =============================================================================
-# Link build statements for EXECUTABLE target miner
-
-
-#############################################
-# Link the executable miner
-
-build miner: CXX_EXECUTABLE_LINKER__miner_Debug CMakeFiles/miner.dir/src/miner.cpp.o CMakeFiles/miner.dir/src/HashLib.cpp.o CMakeFiles/miner.dir/src/Wallet.cpp.o CMakeFiles/miner.dir/src/Block.cpp.o CMakeFiles/miner.dir/src/BtcLib.cpp.o | /usr/lib/x86_64-linux-gnu/libssl.so /usr/local/lib/libsecp256k1.so /usr/lib/x86_64-linux-gnu/libcrypto.so
-  FLAGS = -g -fsanitize=address -g
-  LINK_LIBRARIES = -Wl,-rpath,/usr/local/lib  /usr/lib/x86_64-linux-gnu/libssl.so  /usr/local/lib/libsecp256k1.so  /usr/lib/x86_64-linux-gnu/libcrypto.so
-  OBJECT_DIR = CMakeFiles/miner.dir
-  POST_BUILD = :
-  PRE_LINK = :
-  TARGET_FILE = miner
-  TARGET_PDB = miner.dbg
 
 
 #############################################
@@ -186,7 +154,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 #############################################
 # Folder: /home/maros/code/cpp/btc_project/cmake-build-debug
 
-build all: phony main miner
+build all: phony main
 
 # =============================================================================
 # Built-in targets

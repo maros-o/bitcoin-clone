@@ -73,3 +73,12 @@ btc::bytes btc::base58check(const btc::bytes& input, btc::byte version) {
 
     return base58_encode(data);
 }
+
+btc::bytes btc::uint64_to_bytes(uint64_t value) {
+    btc::bytes result(8);
+    for (int i = 7; i >= 0; i--) {
+        result[i] = value & 0xff;
+        value >>= 8;
+    }
+    return result;
+}

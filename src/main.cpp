@@ -2,6 +2,8 @@
 
 #include "../include/HashLib.h"
 #include "../include/Wallet.h"
+#include "../include/Transaction.h"
+#include "../include/Chain.h"
 
 void test_hash_functions(const btc::bytes& input) {
     std::cout << "--- test_hash_functions ---" << std::endl;
@@ -24,13 +26,19 @@ void test_private_public_key_address(size_t tests) {
 }
 
 int main() {
-    std::vector<std::string> test_words = {"maros", "default", "Hello world"};
+    std::vector<std::string> test_words = {"rust", "is", "awesome"};
     for (const auto& word : test_words) {
         test_hash_functions(btc::bytes(word.begin(), word.end()));
         std::cout << std::endl;
     }
 
     test_private_public_key_address(10);
+
+    Wallet my_wallet{"maros"};
+    my_wallet.print();
+
+    Chain& chain = Chain::get_instance();
+    chain.mine(my_wallet.get_address());
 
     return EXIT_SUCCESS;
 }

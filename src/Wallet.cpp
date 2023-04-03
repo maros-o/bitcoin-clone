@@ -27,7 +27,7 @@ const btc::bytes &Wallet::get_address() const {
     return this->address;
 }
 
-void Wallet::print() {
+void Wallet::print() const {
     std::cout << " --- Wallet (" << this->name << ") --- " << std::endl;
     std::cout << "private key: " << btc::bytes_to_hex_str(this->private_key) << std::endl;
     std::cout << "pub version: 0x0" << (int)this->public_key_version << std::endl;

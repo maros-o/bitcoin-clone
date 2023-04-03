@@ -1,10 +1,8 @@
 #pragma once
 
-#include <string>
-#include <cstdint>
-
 #include "BtcLib.h"
-#include "Transaction.h"
+
+// TODO: implement
 
 struct TxInput {
     // transaction id of the output being spent
@@ -15,4 +13,6 @@ struct TxInput {
 
     // scriptSig
     btc::bytes scriptSig;
+
+    void print() const;
 };
